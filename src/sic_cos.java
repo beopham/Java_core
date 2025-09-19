@@ -6,5 +6,6 @@ public class sic_cos {
         Scanner sc=new Scanner(System.in);
         double a=sc.nextDouble();
         System.out.println("SIN = " +Math.sin(a));
+        // đoạn code mới nè
     }
 }

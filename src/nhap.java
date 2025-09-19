@@ -22,3 +22,4 @@ public class nhap {
         System.out.println(nha);
     }
 }
+// đoạn code mới nè

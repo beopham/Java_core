@@ -19,3 +19,4 @@ public class hinhtron {
         System.out.println("Chu vi = " +chuvi);
     }
 }
+// đoạn code mới nè
