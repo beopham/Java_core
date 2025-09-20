@@ -23,6 +23,5 @@ public class matkhau {
         System.out.println("- 1 ký tự đặc biệt (@ hoặc .)");
         System.out.println("- và từ 8 ký tự trở lên.");
     }
-
     }
 }
