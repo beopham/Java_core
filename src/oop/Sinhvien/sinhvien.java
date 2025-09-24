@@ -1,6 +1,7 @@
 package oop.Sinhvien;
 
 import java.util.ArrayList;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class sinhvien {
@@ -87,6 +88,19 @@ public class sinhvien {
             System.out.println("Bad");
         }
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        sinhvien sinhvien = (sinhvien) o;
+        return getTuoi() == sinhvien.getTuoi() && Double.compare(getDiemtoan(), sinhvien.getDiemtoan()) == 0 && Double.compare(getDiemli(), sinhvien.getDiemli()) == 0 && Double.compare(getDiemhoa(), sinhvien.getDiemhoa()) == 0 && Objects.equals(getTen(), sinhvien.getTen()) && Objects.equals(getDiachi(), sinhvien.getDiachi());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getTen(), getTuoi(), getDiachi(), getDiemtoan(), getDiemli(), getDiemhoa());
+    }
+
     @Override
     public String toString() {
         return "sinhvien{" +
